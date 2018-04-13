@@ -13,6 +13,29 @@ import {
 } from 'react-native';
 
 import {StackNavigator} from 'react-navigation';
+import HomePage from './src/pages/HomePage';
+import ListPage from './src/pages/ListPage';
+import DetailPage from './src/pages/DetailPage';
+
+const AppNavigator=StackNavigator({
+  // Home 路由名称 screen 路由对应的screen
+  Home:{ screen: HomePage},
+  List:{ screen:ListPage},
+  Detail:{screen:DetailPage}
+},{
+  // 默认路由
+  initialRouteName:'Home',
+  // 导航配置
+  navigationOptions:{
+    headerStyle: {
+      backgroundColor: '#f60',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  }
+});
 
 const instructions = Platform.select({
   ios: 'ios环境',
@@ -23,25 +46,11 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <AppNavigator/>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
 });

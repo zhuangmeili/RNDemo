@@ -35,8 +35,18 @@ export default class HomePage extends Component<Props> {
         <Button
           title='跳转列表页'
           onPress={()=>this.props.navigation.navigate('List') } />
-
-
+        <Button
+          title='跳Fetch'
+          onPress={()=>this.props.navigation.navigate('Fetch') } />
+        <Button
+          title='跳DataList'
+          onPress={()=>this.props.navigation.navigate('DataList') } />
+        <Button
+          title='跳DemoPage'
+          onPress={()=>this.props.navigation.navigate('Demo') } />
+        <Button
+          title='跳ScrollPage'
+          onPress={()=>this.props.navigation.navigate('Scroll') } />
       </View>
     );
   }

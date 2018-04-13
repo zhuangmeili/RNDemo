@@ -30,10 +30,9 @@ export default class HomePage extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>我是首页的内容---{this.state.name}</Text>
         {/* 页面之间跳转*/}
         <Button
-          title='跳转列表页'
+          title='跳ListPage'
           onPress={()=>this.props.navigation.navigate('List') } />
         <Button
           title='跳Fetch'

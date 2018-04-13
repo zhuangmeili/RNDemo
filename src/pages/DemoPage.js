@@ -40,6 +40,7 @@ export default class DemoPage extends Component<Props> {
     return (
       <View style={styles.container}>
         <View>
+          <Image source={require('../assets/img/icon2.png')} style={{width:30,height:30}}/>
           {/* demo1 */}
           {/*<Image source={pic} style={{ width:110,height:110}}></Image>
           <Text style={styles.instructions}>

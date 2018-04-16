@@ -12,6 +12,7 @@ import {
   View,
   Image,
   TextInput,
+  ImageBackground
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -81,8 +82,14 @@ export default class DemoPage extends Component<Props> {
               {this.state.name}
             </Text>
           </View>
-
-
+          <ImageBackground
+            source={require('../assets/img/icon2.png')}
+            style={{width:50, height:50}}>
+            <Text>Inside</Text>
+            <Text>Inside</Text>
+            <Text>Inside</Text>
+            <Text>Inside</Text>
+          </ImageBackground>
 
           {/* demo5*/}
           {/*demo6*/}

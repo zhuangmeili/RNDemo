@@ -20,6 +20,9 @@ import DetailPage from './src/pages/DetailPage';
 import DataList from './src/pages/DataList';
 import DemoPage from './src/pages/DemoPage';
 import ScrollPage from './src/pages/ScrollPage';
+import TouchPage from './src/pages/TouchPage';
+import AnimationPage from './src/pages/AnimationPage';
+
 
 
 const AppNavigator=StackNavigator({
@@ -31,6 +34,8 @@ const AppNavigator=StackNavigator({
   DataList:{screen:DataList},
   Demo:{ screen:DemoPage},
   Scroll:{ screen:ScrollPage},
+  Touch:{ screen:TouchPage},
+  Animation:{ screen:AnimationPage},
 },{
   // 默认路由
   initialRouteName:'Home',

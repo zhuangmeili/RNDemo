@@ -39,7 +39,7 @@ export default class ScrollPage extends Component<Props> {
     };
 
     return (
-      <ScrollView contentContainerStyle={styles.wrapper}>
+      <ScrollView contentContainerStyle={styles.wrapper} pagingEnabled>
         <View style={styles.container}>
           <Text>你是我的小苹果</Text>
           <Image source={pic} style={styles.img}/>
@@ -47,19 +47,16 @@ export default class ScrollPage extends Component<Props> {
 
           <Image source={pic} style={styles.img}/>
           <Text>222</Text>
+        </View>
+        <View style={styles.container}>
+          <Text>page 2</Text>
+          <Image source={pic} style={styles.img}/>
+          <Text>222</Text>
 
           <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
           <Text>222</Text>
-          <Text>222</Text>
-          <Text>222</Text>
-          <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
-          <Image source={pic} style={styles.img}/>
         </View>
+
 
       </ScrollView>
     );
@@ -68,8 +65,8 @@ export default class ScrollPage extends Component<Props> {
 
 const styles = StyleSheet.create({
   wrapper: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   container: {
     flex:1,

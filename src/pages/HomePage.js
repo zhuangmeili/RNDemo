@@ -46,6 +46,9 @@ export default class HomePage extends Component<Props> {
         <Button
           title='跳ScrollPage'
           onPress={()=>this.props.navigation.navigate('Scroll') } />
+        <Button
+          title='跳Indicator'
+          onPress={()=>this.props.navigation.navigate('Indicator') } />
       </View>
     );
   }

@@ -22,6 +22,9 @@ import DemoPage from './src/pages/DemoPage';
 import ScrollPage from './src/pages/ScrollPage';
 import TouchPage from './src/pages/TouchPage';
 import AnimationPage from './src/pages/AnimationPage';
+import IndicatorPage from './src/pages/IndicatorPage';
+import DatePage from './src/pages/DatePage';
+
 
 
 
@@ -36,9 +39,11 @@ const AppNavigator=StackNavigator({
   Scroll:{ screen:ScrollPage},
   Touch:{ screen:TouchPage},
   Animation:{ screen:AnimationPage},
+  Indicator:{ screen:IndicatorPage},
+  Date:{ screen:DatePage},
 },{
   // 默认路由
-  initialRouteName:'Home',
+  initialRouteName:'Date',
   // 导航配置
   navigationOptions:{
     headerStyle: {

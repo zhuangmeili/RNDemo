@@ -43,7 +43,7 @@ const AppNavigator=StackNavigator({
   Date:{ screen:DatePage},
 },{
   // 默认路由
-  initialRouteName:'Date',
+  initialRouteName:'Fetch',
   // 导航配置
   navigationOptions:{
     headerStyle: {
